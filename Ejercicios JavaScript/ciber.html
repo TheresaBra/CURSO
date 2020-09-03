@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+ // Ejercicio 1:
+
+console.log ("Hola mundo");
+
+ // Ejercicio 2:
+alert("Me llamo Theresa"); 
+
+ // Ejercicio 3:
+var nombre = "Theresa";
+var apellido = "Braun"; 
+
+console.log (nombre + " " + apellido);
+
+ // Ejercicio 4:
+
+var numero = 10;
+var numero2 = 12;
+var suma = numero + numero2;
+
+function suma (){
+
+    suma = parseInt(numero + numero2);
+}
+
+console.log("La suma entre" + " " + numero + " " + "y" + " " + numero2 + " "+  "es" + " " + suma); 
+
+
+ // Ejercicio 5:
+
+ 
+ var nota_examen = prompt("Introduce el resultado del examen");
+
+ if (nota_examen >=5) {
+
+     alert("Felicidades! Has apropado el examen con un" + " " + nota_examen);
+ } else {
+
+     alert("Lo siento, has suspendido el examen con un" + " " + nota_examen); 
+
+ }
+
+// Ejercicio 6:
+
+var color="blau";
+
+var color2="verde"; 
+
+
+console.log ("Tinc un cotxe de color" + " " + color);
+
+console.log ("Tinc un cotxe de color" + " " + color2);
+
+var str = "Tinc un cotxe de color blau";
+var newstr = str.replace(/o/gi, "u");
+
+console.log(newstr);
+
+// Ejercicio 7:
+
+var objetos = ["mesa", "silla", "ordenador", "libreta"];
+
+for (var index=0; index <4; index++) {
+
+    console.log ("El objeto" + " " + objetos[index] + " " + "está en la posición" + " " + index ); 
+     
+}
+
+
+// Ejercicio 8:
+
+var valor1 = parseInt (prompt("Introduce un primer nº"));
+
+var valor2 = parseInt(prompt("Introduce un segundo nº"));
+
+var operador = prompt("Qué operación quieres realizar?");
+
+
+function sumar (valor1, valor2) {
+
+    console.log("El resultado es:" + (valor1+valor2));
+}
+
+function restar (valor1, valor2) {
+
+console.log("El resultado es:" + (valor1-valor2));
+}
+
+function multiplicar (valor1, valor2) {
+
+console.log("El resultado es:" + (valor1*valor2));
+}
+
+function calculadora (operador, valor1, valor2) {
+
+    if (operador == "sumar") {
+
+      sumar (valor1, valor2);
+
+
+    }  else if (operador == "restar") {
+
+        restar (valor1, valor2);
+       
+    } else if (operador == "multiplicar") {
+
+        multiplicar (valor1, valor2);
+    }
+
+}
+
+var resultado = calculadora(operador, valor1, valor2); 
+
+</script>
+
+</body>
+</html>
